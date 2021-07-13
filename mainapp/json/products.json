@@ -1,0 +1,20 @@
+[
+  {
+      "category": "Офис",
+      "name": "Стул будущего",
+      "image": "products_img/23856801-letayushhiy-stol-krovatkachalka-i-drugaya-neobychnaya-mebel_8nbhCvR.jpg",
+      "short_desc": "Комфорт и плавные формы",
+      "description": "",
+      "price": "8999.00",
+      "quantity": 3
+  },
+  {
+      "category": "Дом",
+      "name": "Кухонный стул",
+      "image": "products_img/3f875f0b-a957-11e5-9680-001e673f51c9_5651ab24-a957-11e5-9680-001e673f51c9._77Al9qb.jpeg",
+      "short_desc": "Надежность и простота",
+      "description": "",
+      "price": "4983.54",
+      "quantity": 23
+  }
+]
