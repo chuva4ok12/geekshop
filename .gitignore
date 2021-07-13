@@ -3,7 +3,6 @@ env/
 geekshop/db.sqlite3
 .idea/
 __pycache__
-media/
 .DS_Store
 venv
 *.log
