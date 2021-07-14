@@ -16,5 +16,59 @@
       "description": "",
       "price": "4983.54",
       "quantity": 23
+  },
+  {
+      "category": "Дом",
+      "name": "Отличная махорка",
+      "image": "products_img/mahorka-sorta-i-opisanie-1_resize_h4DwM8C.jpg",
+      "short_desc": "Курни по старинке",
+      "description": "",
+      "price": "140.00",
+      "quantity": 59996
+  },
+  {
+      "category": "Офис",
+      "name": "Диван",
+      "image": "products_img/product-3-sm.jpg",
+      "short_desc": "Уютный диван",
+      "description": "Вместительный и уютный аксессуар мебели",
+      "price": "16884.99",
+      "quantity": 113
+  },
+  {
+      "category": "Модерн",
+      "name": "Настольная лампа",
+      "image": "products_img/product-31_GHnuHRf.jpg",
+      "short_desc": "Лампа для современных и практичных людей",
+      "description": "Изящество форм и практичность",
+      "price": "5324.59",
+      "quantity": 17
+  },
+  {
+      "category": "Классика",
+      "name": "Стол круглый",
+      "image": "products_img/slider-hotdeal_CeYqmaJ.jpg",
+      "short_desc": "Отличное дизайнерское решение",
+      "description": "Для рыцарей круглого стола!",
+      "price": "15675.99",
+      "quantity": 104
+  },
+  {
+      "category": "Дом",
+      "name": "Ступа мраморная",
+      "image": "products_img/product-51_go7Csb7.jpg",
+      "short_desc": "Ступа для специй",
+      "description": "Помощница для любой домохозяйки",
+      "price": "1231.76",
+      "quantity": 120
+  },
+  {
+      "category": "Офис",
+      "name": "Стул",
+      "image": "products_img/3f875f0b-a957-11e5-9680-001e673f51c9_5651ab24-a957-11e5-9680-001e673f51c9._77Al9qb.jpeg",
+      "short_desc": "Отличный предмет мебели",
+      "description": "Мягко!",
+      "price": "1584.99",
+      "quantity": 108
   }
 ]
