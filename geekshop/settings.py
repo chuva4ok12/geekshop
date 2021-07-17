@@ -143,7 +143,7 @@ STATIC_URL = '/static/'
 #     os.path.join(BASE_DIR, "geekshop", "static"),
 # )
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'geekshop/static')
 
 if DEBUG:
    def show_toolbar(request):
