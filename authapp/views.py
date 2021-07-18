@@ -4,10 +4,13 @@ from django.core.mail import send_mail
 from django.shortcuts import HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse
+from django.views.decorators.csrf import csrf_exempt
+
 from .forms import ShopUserLoginForm, ShopUserRegisterForm, ShopUserEditForm, ShopUserProfileEditForm
 from .models import ShopUser
 
 
+@csrf_exempt
 def login(request):
     title = 'access'
 
