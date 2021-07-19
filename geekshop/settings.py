@@ -227,3 +227,16 @@ SOCIAL_AUTH_VK_OAUTH2_KEY = '7887133'
 SOCIAL_AUTH_VK_OAUTH2_SECRET = 'ZwzNRWfA5Lx8WRuVHJ5H'
 
 
+
+CACHE_MIDDLEWARE_ALIAS = 'default'
+CACHE_MIDDLEWARE_SECONDS = 120
+CACHE_MIDDLEWARE_KEY_PREFIX = 'geekshop'
+
+CACHES = {
+   'default': {
+       'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+       'LOCATION': '127.0.0.1:11211',
+   }
+}
+
+LOW_CACHE = True

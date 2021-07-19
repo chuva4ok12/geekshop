@@ -2,7 +2,8 @@ import random
 
 from django.shortcuts import render
 from django.shortcuts import get_object_or_404
-
+from django.conf import settings
+from django.core.cache import cache
 
 from mainapp.models import ProductCategory, Product
 from django.contrib.auth.decorators import login_required
@@ -10,6 +11,16 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 
 
+def get_links_menu():
+   if settings.LOW_CACHE:
+       key = 'links_menu'
+       links_menu = cache.get(key)
+       if links_menu is None:
+           links_menu = ProductCategory.objects.filter(is_active=True)
+           cache.set(key, links_menu)
+       return links_menu
+   else:
+       return ProductCategory.objects.filter(is_active=True)
 
 
 def get_hot_product():
@@ -63,6 +74,7 @@ def products(request, pk=None, page=1):
         'products': products_paginator,
         'hot_product': hot_product,
         'same_products': same_products,
+        'links_menu': get_links_menu(),
     }
 
 
@@ -77,6 +89,7 @@ def product(request, pk):
         'title': title,
         'categories': ProductCategory.objects.all(),
         'product': get_object_or_404(Product, pk=pk),
+        'links_menu': get_links_menu(),
     }
 
     return render(request, 'product.html', context)
