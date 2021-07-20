@@ -101,7 +101,7 @@ def product(request, pk):
     context = {
         'title': title,
         'categories': ProductCategory.objects.all(),
-        'product': get_object_or_404(Product, pk=pk),
+        'product': product,
         'links_menu': get_links_menu(),
     }
 
