@@ -4,6 +4,7 @@ from django.shortcuts import render
 from django.shortcuts import get_object_or_404
 from django.conf import settings
 from django.core.cache import cache
+from django.views.decorators.cache import cache_page
 
 from mainapp.models import ProductCategory, Product
 from django.contrib.auth.decorators import login_required
@@ -46,6 +47,7 @@ def get_same_products(hot_products):
     return same_products
 
 
+@cache_page(3600)
 def products(request, pk=None, page=1):
     print(pk)
     title = 'products'
