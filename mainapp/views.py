@@ -96,7 +96,7 @@ def products(request, pk=None, page=1):
 @login_required
 def product(request, pk):
     title = 'страница продукта'
-    product = get_product()
+    product = get_product(pk)
 
     context = {
         'title': title,
